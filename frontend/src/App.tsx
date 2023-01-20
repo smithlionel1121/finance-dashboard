@@ -6,6 +6,7 @@ import {
 } from "@tanstack/react-router";
 import Index from "./Index";
 import Form from "./Form";
+import TransactionList from "./Transactions/TransactionList";
 
 const rootRoute = createRouteConfig({
   component: Outlet,
@@ -21,7 +22,12 @@ const formRoute = rootRoute.createRoute({
   component: Form,
 });
 
-const routeConfig = rootRoute.addChildren([indexRoute, formRoute]);
+const listRoute = rootRoute.createRoute({
+  path: "/list",
+  component: TransactionList,
+});
+
+const routeConfig = rootRoute.addChildren([indexRoute, formRoute, listRoute]);
 
 const router = createReactRouter({ routeConfig });
 

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Eu do cillum",
+    "amount": 10.0,
+    "categories": ["General"]
+  },
+  {
+    "id": 2,
+    "name": "Aliqua aliquip",
+    "amount": 25.5,
+    "categories": ["Shopping", "Clothing"]
+  },
+  {
+    "id": 3,
+    "name": "Quis exercitation",
+    "amount": 8.45,
+    "categories": ["Food"]
+  }
+]
